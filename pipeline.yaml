@@ -1,3 +1,5 @@
+trigger: none
+
 resources:
  repositories:
    #https://learn.microsoft.com/en-us/azure/devops/pipelines/repos/multi-repo-checkout?view=azure-devops
