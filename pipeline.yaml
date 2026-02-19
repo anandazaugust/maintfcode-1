@@ -5,7 +5,6 @@ resources:
      type: github #typeofrepository
      name: anandazaugust/tf-template  #actualreponame
      endpoint: mygithubfeb19 #serviceconnectionname
-
-
-    extends:
-      template: pipeline_cd.yaml@github1 #referencename
+  
+extends:
+     template: pipeline-templates/terraform-pipeline.yaml@github1 #referencename
