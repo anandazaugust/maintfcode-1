@@ -7,4 +7,5 @@ resources:
      endpoint: mygithubfeb19 #serviceconnectionname
 
 
-    #
+    extends:
+      template: pipeline_cd.yaml@github1 #referencename
