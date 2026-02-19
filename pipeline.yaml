@@ -1,0 +1,10 @@
+resources:
+ repositories:
+   #https://learn.microsoft.com/en-us/azure/devops/pipelines/repos/multi-repo-checkout?view=azure-devops
+   - repository: github1 #referencename
+     type: github #typeofrepository
+     name: anandazaugust/tf-template  #actualreponame
+     endpoint: mygithubfeb19 #serviceconnectionname
+
+
+    #
