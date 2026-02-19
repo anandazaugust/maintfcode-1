@@ -7,5 +7,5 @@ resources:
      endpoint: mygithubfeb19 #serviceconnectionname
      ref: refs/heads/feature1
   
-extends:
-     template: pipeline_cd.yaml@github1 #referencename
+extends:  # if this is not there, it will not know which template to call in the repo
+     template: pipeline_cd.yaml@github1 #referencename 
