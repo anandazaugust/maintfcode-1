@@ -1,6 +1,6 @@
 jobs:
 
-- job1:
+- job: Build
   displayName: 'Run a one-line script'
   pool:
    vmImage: 'ubuntu-latest'
