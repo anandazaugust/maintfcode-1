@@ -1,0 +1,17 @@
+jobs:
+ job1:
+ displayName: 'Run a one-line script'
+ pool:
+   vmImage: 'ubuntu-latest'
+steps:
+   - script: echo Hello, world!
+     displayName: 'Run a one-line script'
+   - task: TerraformInstaller@0
+     inputs:
+      terraformVersion: 'latest'
+     displayName: 'Install Terraform'
+   - script: 
+      terraform init
+      terraform plan
+      
+     displayName: 'Run Terraform'
