@@ -11,8 +11,7 @@ jobs:
      inputs:
       terraformVersion: 'latest'
      displayName: 'Install Terraform'
-   - script: 
+   - script: |
       terraform init
       terraform plan
-      
      displayName: 'Run Terraform'
