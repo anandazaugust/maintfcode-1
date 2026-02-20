@@ -3,9 +3,9 @@ services:
   terraform:
     image: hashicorp/terraform
     volumes:
-      - .:/infra
+      - .:/infra # we are mounting the current directory of the azdo pipeline to the infra directory in the container. This is where the terraform code is located. We are doing this because we want to run terraform commands in the container and we need to have access to the terraform code.
       
-    working_dir: /infra
+    working_dir: /infra # this is the directory where we will run the terraform commands. This is the same directory where we mounted the current directory of the azdo pipeline. We are doing this because we want to run terraform commands in the container and we need to have access to the terraform code.
     environment:
       - ARM_CLIENT_ID
       - ARM_CLIENT_SECRET
